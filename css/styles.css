@@ -1,7 +1,7 @@
 :root {
   --main-background-color: #ffffff;
   --accent-background-color: #f5f4fa;
-  --header-bcg-color: #2f303a;
+  --footer-bcg-color: #2f303a;
   --text-and-button-accent: #2196f3;
   --main-text-color: #757575;
   --header-color: #212121;
@@ -16,10 +16,11 @@ body {
 .list {
   list-style: none;
 }
-a {
+.link {
   text-decoration: none;
   color: var(--main-text-color);
 }
+
 /* header */
 .logo {
   color: #000000;
@@ -31,4 +32,72 @@ a {
 }
 .logo-accent {
   color: var(--text-and-button-accent);
+}
+.menu .link,
+.nav-contact .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu .link {
+  color: var(--header-color);
+}
+
+.nav-contact .link {
+  color: var(--main-text-color);
+}
+.menu .link:hover,
+.menu .link:focus,
+.nav-contact .link:hover,
+.nav-contact .link:focus {
+  color: var(--text-and-button-accent);
+}
+
+/* footer */
+.footer {
+  background-color: var(--footer-bcg-color);
+}
+.footer .logo {
+  color: #ffffff;
+}
+.address .link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+.map {
+  color: #ffffff;
+}
+.mail,
+.tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* main */
+/* hero */
+.hero {
+  background-color: var(--footer-bcg-color);
+}
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero .btn {
+  background-color: var(--text-and-button-accent);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
