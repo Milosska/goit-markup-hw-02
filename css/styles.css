@@ -1,0 +1,18 @@
+:root {
+  --main-background-color: #ffffff;
+  --accent-background-color: #f5f4fa;
+  --header-bcg-color: #2f303a;
+  --text-and-button-accent: #2196f3;
+  --main-text-color: #757575;
+  --header-color: #212121;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+}
+.list {
+  list-style: none;
+}
