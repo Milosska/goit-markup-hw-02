@@ -1,3 +1,4 @@
+/* global */
 :root {
   --main-background-color: #ffffff;
   --accent-background-color: #f5f4fa;
@@ -12,14 +13,16 @@ body {
   background-color: var(--main-background-color);
   color: var(--main-text-color);
   font-family: var(--main-font);
+  letter-spacing: 0.03em;
 }
-.list {
+ul {
   list-style: none;
 }
-.link {
+a {
   text-decoration: none;
   color: var(--main-text-color);
 }
+/* global end*/
 
 /* header */
 .logo {
@@ -33,25 +36,25 @@ body {
 .logo-accent {
   color: var(--text-and-button-accent);
 }
-.menu .link,
-.nav-contact .link {
+.menu-link,
+.contact-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.menu .link {
+.menu-link {
   color: var(--header-color);
 }
 
-.nav-contact .link {
+.contact-link {
   color: var(--main-text-color);
 }
-.menu .link:hover,
-.menu .link:focus,
-.nav-contact .link:hover,
-.nav-contact .link:focus {
+.menu-link:hover,
+.menu-link:focus,
+.contact-link:hover,
+.contact-link:focus {
   color: var(--text-and-button-accent);
 }
 
@@ -59,13 +62,12 @@ body {
 .footer {
   background-color: var(--footer-bcg-color);
 }
-.footer .logo {
+.footer-logo {
   color: #ffffff;
 }
-.address .link {
+.address-item {
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   font-style: normal;
 }
 .map {
@@ -74,6 +76,10 @@ body {
 .mail,
 .tel {
   color: rgba(255, 255, 255, 0.6);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--text-and-button-accent);
 }
 
 /* main */
@@ -90,7 +96,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-.hero .btn {
+.hero-btn {
   background-color: var(--text-and-button-accent);
   color: #ffffff;
   font-weight: 700;
@@ -100,4 +106,48 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+/* Переваги компанії */
+.benefits-heading {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.benefits-headline {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--header-color);
+}
+.benefits-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Чим ми займаємося */
+.activities-heading,
+.team-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--header-color);
+}
+
+/* Наша команда */
+.team-headline {
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--header-color);
+}
+.team-text {
+  line-height: 1.19px;
+  text-align: center;
 }
