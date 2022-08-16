@@ -115,7 +115,8 @@ body {
   background-color: var(--main-background-color);
 }
 
-.benefits-heading {
+.benefits-heading,
+.portfolio-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -159,4 +160,32 @@ body {
 .team-text {
   line-height: 1.19px;
   text-align: center;
+}
+
+/* portfolio */
+.portfolio {
+  background-color: var(--main-background-color);
+}
+.portfolio-btn {
+  font-weight: 500;
+  line-height: 1.63;
+  text-align: center;
+  color: var(--header-color);
+  background-color: var(--accent-background-color);
+  cursor: pointer;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #ffffff;
+  background-color: var(--text-and-button-accent);
+}
+.works-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
+}
+.works-text {
+  line-height: 1.88;
 }
